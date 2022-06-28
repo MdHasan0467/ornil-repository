@@ -1,0 +1,1394 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*--------------Start section from here----------------*/
+
+body {
+  border: 1px solid #fff;
+  overflow-x: hidden;
+  /*Right side overflow hidden */
+}
+
+.section1 {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-image: url(tree.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #fff;
+}
+
+.WelCome {
+  padding: 3px;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  font-size: 35px;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.WelComeText {
+  width: 0ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(24) infinite alternate;
+  border-right: 3px solid black;
+  color: #00ff00;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 3px;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  font-size: 35px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+
+  50% {
+    width: 23ch;
+    /*Joto gula word ter theke 2 bad(-) dite hobe ----- Console.log('This Is My First project'.length) ----- then enter button click korlei koyta word ase ber count hoye jabe */
+  }
+}
+
+
+/*--------Start Auto type text from here-----------*/
+h5 {
+  position: absolute;
+  top: 110px;
+  left: 300px;
+  font-size: 45px;
+  font-weight: 500;
+
+}
+
+span {
+  color: #fff000;
+
+}
+
+/*-------------End Auto type text here-----------*/
+
+
+
+
+
+/*--------Start Navigation bar from here-----------*/
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-text {
+  position: absolute;
+  left: 87%;
+  top: 33px;
+  font-size: 20px;
+
+}
+
+
+nav img {
+  width: 124px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+
+.nav-links {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  background: #ed0202;
+  height: 70vh;
+  width: 200px;
+  text-align: left;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+
+.nav-links ul li {
+  list-style: none;
+  /*for no bullet here */
+  display: block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/*Start for the extra underLine which visual when hover here */
+
+.nav-links ul li::after {
+  content: ' ';
+  width: 0%;
+  /* for display none */
+  height: 2px;
+  background: #36f436;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+  /* for visual when hover here*/
+}
+
+/*End for the extra underLine which visual when hover here */
+nav .close-icon {
+  display: none;
+}
+
+nav .menu-icon {
+  display: none;
+}
+
+nav .fa-bars {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 97%;
+  transition: 0.5s;
+}
+
+nav .fa-bars:hover {
+  color: #575968;
+}
+
+nav .fa-times {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10%;
+  transition: 0.5s;
+}
+
+nav .fa-times:hover {
+  color: #575968;
+}
+
+.menu-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 30%;
+  color: #fff;
+  font-size: 80px;
+}
+
+/*--------End Navigation bar  here-----------*/
+
+
+
+
+
+/*--------Start AboutSection from here-----------*/
+
+.AboutSection {
+  position: absolute;
+  top: 0;
+  right: -1500px;
+  background: #00ff00;
+  width: 100%;
+  height: 70vh;
+  text-align: left;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.ul-AboutSection p {
+  margin-left: 80px;
+  margin-top: 15px;
+
+}
+
+.nav-AboutSection .close-icon {
+  display: none;
+}
+
+.nav-AboutSection .menu-icon {
+  display: none;
+}
+
+.nav-AboutSection .fa-bars {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 97%;
+  transition: 0.5s;
+}
+
+.nav-AboutSection .fa-bars:hover {
+  color: #57685d;
+}
+
+.nav-AboutSection .fa-times {
+  display: inline-block;
+  color: #575968;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10%;
+  transition: 0.5s;
+}
+
+.nav-AboutSection .fa-times:hover {
+  color: #ff0000;
+}
+
+/*--------End AboutSection  here-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Start CourseSection from here-----------*/
+
+.CourseSection {
+  position: absolute;
+  top: 0;
+  right: -1500px;
+  background: #fff;
+  width: 100%;
+  height: 70vh;
+  z-index: 2;
+  transition: 0.5s;
+  text-align: center;
+}
+
+
+.nav-CourseSection .close-icon {
+  display: none;
+}
+
+.nav-CourseSection .menu-icon {
+  display: none;
+}
+
+.nav-CourseSection .fa-bars {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 97%;
+  transition: 0.5s;
+}
+
+.nav-CourseSection .fa-bars:hover {
+  color: #575968;
+}
+
+.nav-CourseSection .fa-times {
+  display: inline-block;
+  color: #575968;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 2%;
+  transition: 0.5s;
+}
+
+.nav-CourseSection .fa-times:hover {
+  color: #ff0000;
+}
+
+
+
+
+
+
+
+
+/*------------ Course ----------- */
+
+
+.course {
+
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course-h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+
+.course-p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.course-h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media(max-width:700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*--------End CourseSection  here-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Start MusicSection from here-----------*/
+
+.MusicSection {
+  position: absolute;
+  top: 0;
+  right: -1500px;
+  background: url(img/guitar-background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  text-align: left;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+
+
+
+.Music-Content {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.left-col {
+  margin-left: 6%;
+}
+
+.left-col .Music-h1 {
+  margin-left: 280px;
+  font-size: 50px;
+  color: #fff;
+  line-height: 110px;
+  float: left;
+}
+
+.left-col .Music-h1:hover {
+  color: #d36565;
+}
+
+.right-col {
+  float: right;
+  margin-right: 6%;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.right-col .Music-p {
+  font-size: 20px;
+  color: #5f5f5f;
+  font-weight: 400;
+  margin-right: 95px;
+  margin-top: 50px;
+}
+#playIcon{
+  padding: 0;
+  width: 40px;
+  margin-left: 87%;
+  margin-top: 15%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-MusicSection .close-icon {
+  display: none;
+}
+
+.nav-MusicSection .menu-icon {
+  display: none;
+}
+
+.nav-MusicSection .fa-bars {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 97%;
+  transition: 0.5s;
+}
+
+.nav-MusicSection .fa-bars:hover {
+  color: #575968;
+}
+
+.nav-MusicSection .fa-times {
+  display: inline-block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10%;
+  transition: 0.5s;
+}
+
+.nav-MusicSection .fa-times:hover {
+  color: #ff0000;
+}
+
+/*--------End AboutSection  here-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Start ContactSection from here-----------*/
+
+.ContacttSection {
+  position: absolute;
+  top: 0;
+  right: -1500px;
+  background: #000;
+  width: 100%;
+  height: 70vh;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.ul-ContactSection p {
+  margin-left: 50px;
+  margin-top: 15px;
+  font-size: 25px;
+  color: #cac7ff;
+
+}
+
+.Contact-heading {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 40%;
+}
+
+.ul-ContactSection img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 70%;
+  margin-top: 5%;
+}
+
+.nav-ContactSection .close-icon {
+  display: none;
+}
+
+.nav-ContactSection .menu-icon {
+  display: none;
+}
+
+.nav-ContactSection .fa-bars {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 97%;
+  transition: 0.5s;
+}
+
+.nav-ContactSection .fa-bars:hover {
+  color: #685757;
+}
+
+.nav-ContactSection .fa-times {
+  display: inline-block;
+  color: #fff000;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.nav-ContactSection .fa-times:hover {
+  color: #ff0000;
+}
+
+/*--------End ContactSection  here-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- ---Start Time Section ----- */
+#current-time {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.quotes {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.quotes p {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  color: #7684d0;
+}
+
+.quotes h2 {
+  position: absolute;
+  top: 88%;
+  left: 2%;
+  color: #7684d0;
+}
+
+/* -- ---End Time Section ----- */
+
+
+
+
+/*--------Start Search bar from here-----------*/
+
+.search-Box {
+  margin-top: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Search-Bar {
+  width: 27%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+  /*blur the Search Box*/
+}
+
+.Search-Bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+
+
+.Search-Bar button img {
+  width: 25px;
+}
+
+.Search-Bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #7684d0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Search-Bar button:hover {
+  background: #233177;
+}
+
+/*--------End Search bar here-----------*/
+/*---------------------------End section here-------------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------Start section2 from here-------------------------*/
+.section2 {
+  width: 100%;
+  height: 300vh;
+  background: rgb(92, 22, 106);
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  padding: 5px 7px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img1:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img2 {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  padding: 5px 7px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img2:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img3 {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  padding: 5px 7px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img3:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img4 {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  padding: 5px 7px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img4:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img5 {
+  position: absolute;
+  top: 20px;
+  left: 375px;
+  padding: 5px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img5:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img6 {
+  position: absolute;
+  top: 20px;
+  left: 445px;
+  padding: 5px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img6:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+.img7 {
+  position: absolute;
+  top: 20px;
+  left: 515px;
+  padding: 5px;
+  background: burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img7:hover {
+  background: rgb(66, 45, 18);
+  color: #fff;
+}
+
+
+
+.gellary-section {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+#pic {
+  margin-top: 70px;
+  margin-left: 40px;
+  width: 550px;
+  height: 440px;
+  display: inline-block;
+  border-radius: 26px;
+
+}
+
+.layer {
+  margin-top: 70px;
+  margin-left: 40px;
+  background: transparent;
+  height: 440px;
+  width: 550px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 26px;
+  transition: 0.5S;
+}
+
+.layer:hover {
+  background: rgba(198, 196, 83, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.gellary {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+.container {
+  position: absolute;
+  top: 73px;
+  left: 55%;
+  width: 550px;
+  height: 440px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+  transition: 0.5s;
+}
+
+.swiper:hover {
+  opacity: 0.5;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 26px;
+
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #fff;
+  ;
+}
+
+/* its for side indicator color (<>)*/
+
+
+.swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* its for bullet indicator color in the bottom side (. . .)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-pencil {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 19%;
+  top: 64%;
+
+}
+
+iframe {
+  position: absolute;
+  left: 40px;
+  top: 40%;
+  width: 550px;
+  height: 440px;
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Glassmorphism-div {
+  width: 550px;
+  height: 440px;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+}
+
+
+.Glassmorphism-card {
+  width: 550px;
+  height: 440px;
+  color: #fff;
+  text-align: center;
+  padding: 50px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.Glassmorphism-card img {
+  width: 140px;
+  border-radius: 50%;
+}
+
+.Glassmorphism-card h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.Glassmorphism-card p {
+  font-size: 18px;
+  margin: 10px auto;
+  max-width: 330px;
+}
+
+
+
+.Glassmorphism-card .Glassmorphism-links .fa-youtube {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 180px;
+  margin-left: 95px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-youtube:hover {
+  color: red;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-youtube:visited {
+  color: rgba(85, 70, 202, 0.526);
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-facebook {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 180px;
+  margin-left: 55px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-facebook:hover {
+  color: blue;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-facebook:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-instagram {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 180px;
+  margin-left: -95px;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-instagram:hover {
+  color: rgb(253, 2, 165);
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-instagram:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+.Glassmorphism-card .Glassmorphism-links .fa-twitter {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 180px;
+  margin-left: 65px;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-twitter:hover {
+  color: aqua;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-twitter:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+.Glassmorphism-card .Glassmorphism-links .fa-github {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 180px;
+  margin-left: -70px;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-github:hover {
+  color: gray;
+}
+
+.Glassmorphism-card .Glassmorphism-links .fa-gith:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fff;
+  color: #ff01cf;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+  /* its means 30px padding on top side and 10px padding on the bottom*/
+}
+
+.btn:hover {
+  color: #fff;
+  background: linear-gradient(to right bottom, red, green);
+  border: 1px solid rgb(3, 242, 255)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 45vh;
+  background: black;
+  position: relative;
+}
+
+.fa-youtube {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-youtube:visited {
+  color: rgba(85, 70, 202, 0.526);
+}
+
+.fa-facebook {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  left: 160px;
+  top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: blue;
+}
+
+.fa-facebook:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+
+.fa-twitter {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  left: 260px;
+  top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  color: aqua;
+}
+
+.fa-twitter:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+.fa-instagram {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  left: 360px;
+  top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 0, 144);
+}
+
+.fa-instagram:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+
+.fa-github {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  left: 460px;
+  top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fa-github:hover {
+  color: gray;
+}
+
+.fa-gith:visited {
+  color: rgba(0, 106, 237, 0.526);
+}
+
+
+
+.footer-heading {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 550px;
+  color: #fff;
+}
+
+/*----Start company name text  */
+.footer-p {
+  font-size: 35px;
+  position: absolute;
+  top: 80px;
+  left: 410px;
+  color: #575968;
+}
+
+/*----End company name text  */
+
+/*----Start company address text  */
+.footer-p2 {
+  font-size: 20px;
+  position: absolute;
+  top: 130px;
+  left: 460px;
+  color: #575968;
+}
+
+/*----End company address text  */
+
+
+
+footer img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+footer img:hover {
+  opacity: 0.5;
+}
+
+.footer-top {
+  position: absolute;
+  right: 80px;
+  top: 115px;
+  color: #fff;
+}
+
+
+/*--------Start Auto type text 2 from here-----------*/
+h4 {
+  position: absolute;
+  top: 160px;
+  left: 440px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #ff0000;
+}
+
+span {
+  color: #fff000;
+}
+
+/*-------------End Auto type text 2 here-----------*/
+
+
+
+/*----Start copyright text  */
+.footer-p3 {
+  font-size: 20px;
+  position: absolute;
+  top: 260px;
+  left: 400px;
+  color: #575968;
+}
+
+/*----End copyright text  */

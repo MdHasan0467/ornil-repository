@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrNil Hasan Riyad</title>
+  <link rel="stylesheet" href="ornil.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- its for fontawesome icon -->
+
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> <!--It come from "Swiper.com" Then, "get started" And Then, "Use Swiper from CDN"-----Copy the link and paste here-->
+
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>    <!--It come from "Swiper.com" Then, "get started" And Then, "Use Swiper from CDN"-----Copy the link and paste here-->
+
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!--typed js on google > "https://github.com/mattboldt/typed.js/"> CDN ---its for auto text typing-->
+
+</head>
+<body>
+
+  <section class="section1" id="section1">
+
+    
+    
+    <h1 class="WelCome">WelCome To My Website</h1>
+    <h1 class="WelComeText">WelCome To My Website</h1>
+
+    <h5> <span class="auto-type"></span></h5>
+    
+    
+    
+    
+    
+    
+    <!-- --------Start MenuSection From here----------- -->
+
+  <nav>
+    <h1 class="menu-text">Menu</h1> 
+  <div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>  <!---------from fontawesome 4 icon (for close icon)-------->
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#" onclick="showAboutSection()">ABOUT</a></li>
+    <li><a href="#" onclick="showCourseSection()">COURSE</a></li>
+    <li><a href="#" onclick="showMusicSection()">MUSIC</a></li>
+    <li><a href="#" onclick="showContactSection()">CONTACT</a></li>
+  </ul>
+  </div>
+   <i class="fa fa-bars"  onclick="showMenu()"></i> <!--from fontawesome 4 icon (for menu icon)/ -->
+  </nav>
+
+
+  <!-- --------End MenuSection here----------- -->
+
+
+
+    
+    
+    
+    
+    
+    
+
+  <!-- --------Start AboutSection From here----------- -->
+
+  <nav class="nav-AboutSection">
+  <div class="AboutSection" id="AboutSection">
+  <i class="fa fa-times" onclick="hideAboutSection()"></i>  <!---------from fontawesome 4 icon (for close icon)-------->
+  <ul class="ul-AboutSection">
+    <p>I am Ornil Hasan Riyad.</p>
+
+    <p>I’m a Front End Web developer.</p>
+
+    <p>who is passionate about making error-free websites with 100% client satisfaction.</p>
+
+    <p> I have a passion for learning and sharing my knowledge with others as publicly as possible. </p>
+    
+    <p> I love to solve real-world problems.</p>
+    
+    <p>I am strategic, goal-oriented, and always work with an end goal in mind.</p>
+
+    <p> Over the past years, I created 100s of websites for my clients.</p>
+
+    <p> I pride myself on doing quality work and maintain excellent communication. </p>
+
+    <p>Most of the time I work with WordPress but some technologies I enjoy working with include ReactJS, JavaScript as well as PHP.</p>
+  </ul>
+  </div>
+  </nav>
+
+  <!-- --------End AboutSection here----------- -->
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
+  <!-- --------Start CourseSection From here----------- -->
+
+  <nav class="nav-CourseSection">
+  <div class="CourseSection" id="CourseSection">
+  <i class="fa fa-times" onclick="hideCourseSection()"></i>  <!---------from fontawesome 4 icon (for close icon)-------->
+
+           <ul class="ul-CourseSection">
+
+
+    <section class="Course">
+            <h1 class="Course-h1">Courses We Offer</h1>
+               <p class="Course-HP">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+           
+      <div class="row">
+            <div class="course-col">
+            <h3 class="Course-h3">Intermediate</h3>
+            <p class="Course-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facere accusantium, quibusdam numquam laboriosam tempore eveniet labore? Nihil, iure ipsum.</p>
+            </div>
+
+
+            <div class="course-col">
+            <h3 class="Course-h3">Degree</h3>
+            <p class="Course-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facere accusantium, quibusdam numquam laboriosam tempore eveniet labore? Nihil, iure ipsum.</p>
+            </div>
+  
+            <div class="course-col">
+            <h3 class="Course-h3">Post Graduation</h3>
+            <p class="Course-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facere accusantium, quibusdam numquam laboriosam tempore eveniet labore? Nihil, iure ipsum.</p>
+            </div>
+
+       </div>
+    </section>
+
+            </ul>
+            </div>
+            </nav>
+    
+<!-- --------End CourseSection here----------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- --------Start MusicSection From here----------- -->
+
+  <nav class="nav-MusicSection">
+  <div class="MusicSection" id="MusicSection">
+  <i class="fa fa-times" onclick="hideMusicSection()"></i>  <!---------from fontawesome 4 icon (for close icon)-------->
+  
+
+
+
+  <div class="Music-Content">
+      <div class="left-col">
+        <h1 class="Music-h1">THE <br> REAL <br> SOUND</h1>
+      </div>
+      <div class="right-col">
+        <p class="Music-p">Click Here To Listen</p>
+        <img src="img/play-icon.png" id="playIcon">
+      </div>
+    </div>
+
+  <audio id="mySong">
+    <source src="06.Obhiman_Amar-Tahsan_FusionBD.Com.mp3" type="audio/mp3">
+  </audio>
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+  <!-- --------End AboutSection here----------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- --------Start ContactSection From here----------- -->
+
+  <nav class="nav-ContactSection">
+  <div class="ContacttSection" id="ContactSection">
+  <i class="fa fa-times" onclick="hideContactSection()"></i>  <!---------from fontawesome 4 icon (for close icon)-------->
+  <ul class="ul-ContactSection">
+    
+
+    <h1 class="Contact-heading">Contact Us</h1>
+      <p class="Contact-p">Ornil Hasan Riyad (OHT) Co. Ltd.</p>
+      <p class="Contact-p2">DB Road, Chowmuhani, Begumgonj, Noakhali </p>
+      <p class="Contact-p3"> Phone : 01869 - 870467</p>
+      <p class="Contact-p4"> Imo / Whats App : 01869 - 870467</p>
+      <p class="Contact-p5"> Email : ornilhasan.oht.riyad@gmail.com</p>
+      <p class="Contact-p6"> Facebook : Ornil Hasan Riyad </p>
+      <img src="img/Ornil.jpg">
+
+      <div ></div>
+      <div class="Contact-socialMedia">
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"> Youtube</a></i>
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"> Facebook</a></i>
+
+      <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"> Twitter</a></i>
+
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"> Instagram</a></i>
+
+      <a href="https://github.com/MdHasan0467" target="_blank"><i class="fa fa-github"> Github</a></i>
+
+      </div>
+
+    
+  </ul>
+  </div>
+  </nav>
+
+  <!-- --------End ContactSection here----------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- ---Start Time Section ----->
+  <h1 id="current-time"></h1>
+  <div class="quotes">
+    <p>TODAY'S QUOTES</p>
+    <br>
+    <h2>"Lost time is never found again"</h2>
+  </div>
+ <!-- ---End Time Section ----->
+
+   
+    
+  
+
+    
+    <div class="search-Box">
+
+    <form action="https://www.google.com/search" method="get" target="_blank" class="Search-Bar">
+
+      <input type="text" placeholder="Search Here Anythings" name="q">
+
+      <button type="submit"><img src="img/search-icon-removebg-preview.png"></button>
+
+    </form>
+     </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  <section class="section2">
+
+    
+    
+
+    
+       <div class="gellary-section">
+
+   <img src="img/Ornil09.jpg" id="pic" height="400" width="500">
+
+   <div class="layer">
+
+   <h3>OrNil Hasan Riyad</h3>
+
+   </div>
+
+   </div>
+
+   <button class="img1" onclick="Image1()">image 1</button>
+
+     <button class="img2" onclick="Image2()">image 2</button>
+
+     <button class="img3" onclick="Image3()">image 3</button>
+
+     <button class="img4" onclick="Image4()">image 4</button>
+
+     <button class="img5" onclick="Image5()">image 5 </button>
+
+     <button class="img6" onclick="Image6()">image 6 </button>
+
+     <button class="img7" onclick="Image7()">image 7 </button>
+
+     
+    
+     <p class="gellary">Gellary</p>
+
+     
+     
+
+     <iframe src="https://www.dailynayadiganta.com/" frameborder="0"></iframe>
+
+     <i class="fa fa-pencil"> News Feed</i>
+
+
+
+
+
+       <div class="container">
+   <!--It come from "Swiper.com" Then, "get started" And Then, "Add Swiper HTML Layout"-----Copy the link and paste here-- Start--->  
+
+<!-- Slider main container Start From Here -->
+<div class="swiper">
+
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Ornil13.jpg"></div>
+
+    <div class="swiper-slide"><img src="img/Ornil.jpg"></div>
+
+    <div class="swiper-slide"><img src="img/picture3.jpeg"></div>
+
+    <div class="swiper-slide"><img src="img/ornil02.jpg"></div>
+
+    <div class="swiper-slide"><img src="img/Ornil03.jpg"></div>
+
+    <div class="swiper-slide"><img src="img/Ornil09.jpg"></div>
+
+    <div class="swiper-slide"><img src="img/Ornil0.jpg"></div>
+    ...
+  </div>
+
+  <!-- If we need pagination /bullets -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+ <!--It come from "Swiper.com" Then, "get started" And Then, "Add Swiper HTML Layout"-----Copy the link and paste here-- End--->  
+
+  </div>
+
+
+
+
+
+
+  <div class="Glassmorphism-div">
+
+
+    <div class="Glassmorphism-card" data-tilt>
+
+      <img src="img/Ornil.jpg">
+
+      <h2>OrNil Hasan Riyad</h2>
+
+      <p>Web Developer & Web Desginer.</p>
+
+      <div class="Glassmorphism-links">
+
+        <a href="https://facebook.com"><i class="fa fa-youtube"></i></a>
+
+        <a href="https://twitter.com"><i class="fa fa-facebook"></i></a>
+        
+        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></a></i>
+
+        <a href="https://github.com/"><i class="fa fa-github"></a></i>
+
+      </div>
+
+      <a href="#" class="btn">message me</a>
+
+    </div>
+  </div>
+
+
+
+     
+   </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"> Youtube</a></i>
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"> Facebook</a></i>
+
+      <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"> Twitter</a></i>
+
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"> Instagram</a></i>
+
+      <a href="https://github.com/MdHasan0467" target="_blank"><i class="fa fa-github"> Github</a></i>
+
+
+
+
+      <h4> I'm <span class="auto-type2"></span></h4>
+
+
+
+      <h1 class="footer-heading">About Us</h1>
+      <p class="footer-p">Ornil Hasan Riyad (OHT) Co. Ltd.</p>
+      <p class="footer-p2">DB Road, Chowmuhani, Begumgonj, Noakhali </p>
+      <p class="footer-p3">Copyright 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+
+      <a href="#section1"><img src="img/tree.jpg" width="200px" height="100px"></a>
+      <p class="footer-top">Turn Top</p>
+
+
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+  <script src="ornil.js"></script>
+</body>
+</html>
